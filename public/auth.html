@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in or create a MovieStore account to start buying movies.">
+  <title>Login / Sign Up — MovieStore</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animated">
+    <div class="bg-blob"></div>
+  </div>
+
+  <!-- Auth Container -->
+  <div class="auth-container">
+    <div class="auth-card">
+      <!-- Header -->
+      <div class="auth-header">
+        <lord-icon src="https://cdn.lordicon.com/hrjifpbq.json" trigger="loop" delay="2000"
+          colors="primary:#667eea,secondary:#f093fb" style="width:64px;height:64px"></lord-icon>
+        <h2>Welcome Back</h2>
+        <p>Sign in to access your movie collection</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="login" id="login-tab">Login</button>
+        <button class="auth-tab" data-tab="signup" id="signup-tab">Sign Up</button>
+      </div>
+
+      <!-- Login Form -->
+      <form class="auth-form active" id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email Address</label>
+          <input type="email" class="form-input" id="login-email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" class="form-input" id="login-password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-full btn-lg" id="login-btn">
+          <lord-icon src="https://cdn.lordicon.com/hrjifpbq.json" trigger="hover"
+            colors="primary:#ffffff" style="width:20px;height:20px"></lord-icon>
+          Sign In
+        </button>
+        <!-- <p style="text-align:center;margin-top:16px;color:var(--text-muted);font-size:0.85rem">
+          Admin? Use <strong style="color:var(--accent)">admin@moviestore.com</strong> / <strong style="color:var(--accent)">admin123</strong>
+        </p> -->
+      </form>
+
+      <!-- Signup Form -->
+      <form class="auth-form" id="signup-form">
+        <div class="form-group">
+          <label class="form-label" for="signup-name">Full Name</label>
+          <input type="text" class="form-input" id="signup-name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="signup-email">Email Address</label>
+          <input type="email" class="form-input" id="signup-email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="signup-password">Password</label>
+          <input type="password" class="form-input" id="signup-password" placeholder="Min. 6 characters" required minlength="6">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="signup-confirm">Confirm Password</label>
+          <input type="password" class="form-input" id="signup-confirm" placeholder="Re-enter password" required>
+        </div>
+        <button type="submit" class="btn btn-accent w-full btn-lg" id="signup-btn">
+          <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="hover"
+            colors="primary:#ffffff" style="width:20px;height:20px"></lord-icon>
+          Create Account
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

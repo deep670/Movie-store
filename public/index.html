@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MovieStore — Premium digital movie marketplace. Buy your favorite movies instantly with UPI payment.">
+  <title>MovieStore — Premium Movie Marketplace</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animated">
+    <div class="bg-blob"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <lord-icon src="https://cdn.lordicon.com/jdgfsfzr.json" trigger="loop" delay="1500"
+          colors="primary:#f093fb" style="width:20px;height:20px"></lord-icon>
+        Premium Digital Movies
+      </div>
+      <h1>
+        Your Ultimate<br>
+        <span class="gradient-text">Movie Collection</span><br>
+        Starts Here
+      </h1>
+      <p>Discover, buy, and own blockbuster movies from every genre. Premium quality, instant access, secure UPI payments.</p>
+      <div class="hero-buttons">
+        <a href="/movies" class="btn btn-primary btn-lg" id="browse-btn">
+          <lord-icon src="https://cdn.lordicon.com/aklfruoc.json" trigger="hover"
+            colors="primary:#ffffff" style="width:22px;height:22px"></lord-icon>
+          Browse Movies
+        </a>
+        <a href="/auth" class="btn btn-secondary btn-lg" id="join-btn">
+          <lord-icon src="https://cdn.lordicon.com/hrjifpbq.json" trigger="hover"
+            colors="primary:#e0e0e0" style="width:22px;height:22px"></lord-icon>
+          Join Now — Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Movies -->
+  <section class="section" id="featured-section">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="gradient-text">Featured</span> Movies
+      </h2>
+      <a href="/movies" class="btn btn-secondary btn-sm">View All →</a>
+    </div>
+    <div class="movie-grid" id="featured-grid">
+      <div class="loader" style="grid-column: 1/-1">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Genre Categories -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Browse by <span class="gradient-text">Genre</span></h2>
+    </div>
+    <div class="genre-grid" id="genre-grid">
+      <a href="/movies?genre=Action" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/nkmsrxys.json" trigger="hover"
+          colors="primary:#ff5252,secondary:#ffd740" style="width:48px;height:48px"></lord-icon>
+        <h4>Action</h4>
+      </a>
+      <a href="/movies?genre=Sci-Fi" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="hover"
+          colors="primary:#667eea,secondary:#40c4ff" style="width:48px;height:48px"></lord-icon>
+        <h4>Sci-Fi</h4>
+      </a>
+      <a href="/movies?genre=Comedy" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="hover"
+          colors="primary:#ffd740,secondary:#f093fb" style="width:48px;height:48px"></lord-icon>
+        <h4>Comedy</h4>
+      </a>
+      <a href="/movies?genre=Drama" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/kthelypq.json" trigger="hover"
+          colors="primary:#f093fb,secondary:#667eea" style="width:48px;height:48px"></lord-icon>
+        <h4>Drama</h4>
+      </a>
+      <a href="/movies?genre=Horror" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/tdrtiskw.json" trigger="hover"
+          colors="primary:#ff5252,secondary:#764ba2" style="width:48px;height:48px"></lord-icon>
+        <h4>Horror</h4>
+      </a>
+      <a href="/movies?genre=Thriller" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/iltqorsz.json" trigger="hover"
+          colors="primary:#40c4ff,secondary:#667eea" style="width:48px;height:48px"></lord-icon>
+        <h4>Thriller</h4>
+      </a>
+      <a href="/movies?genre=Romance" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/ohfmmfhn.json" trigger="hover"
+          colors="primary:#f093fb,secondary:#ff5252" style="width:48px;height:48px"></lord-icon>
+        <h4>Romance</h4>
+      </a>
+      <a href="/movies?genre=Animation" class="genre-card">
+        <lord-icon src="https://cdn.lordicon.com/jdgfsfzr.json" trigger="hover"
+          colors="primary:#00e676,secondary:#ffd740" style="width:48px;height:48px"></lord-icon>
+        <h4>Animation</h4>
+      </a>
+    </div>
+  </section>
+
+  <!-- Stats Banner -->
+  <section class="section">
+    <div class="glass-card" style="padding:48px; text-align:center">
+      <h2 class="section-title mb-3">Why <span class="gradient-text">MovieStore</span>?</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:32px; margin-top:32px">
+        <div>
+          <lord-icon src="https://cdn.lordicon.com/qmksjezq.json" trigger="loop" delay="2000"
+            colors="primary:#667eea,secondary:#f093fb" style="width:56px;height:56px"></lord-icon>
+          <h4 style="margin:12px 0 6px">Secure UPI Payments</h4>
+          <p style="color:var(--text-muted);font-size:0.9rem">Pay safely with Razorpay UPI integration</p>
+        </div>
+        <div>
+          <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" delay="2500"
+            colors="primary:#00e676,secondary:#40c4ff" style="width:56px;height:56px"></lord-icon>
+          <h4 style="margin:12px 0 6px">Instant Access</h4>
+          <p style="color:var(--text-muted);font-size:0.9rem">Get your movies immediately after purchase</p>
+        </div>
+        <div>
+          <lord-icon src="https://cdn.lordicon.com/aklfruoc.json" trigger="loop" delay="3000"
+            colors="primary:#f093fb,secondary:#ffd740" style="width:56px;height:56px"></lord-icon>
+          <h4 style="margin:12px 0 6px">Premium Collection</h4>
+          <p style="color:var(--text-muted);font-size:0.9rem">Curated movies across all genres</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 <a href="/">MovieStore</a>. Built with ❤️ — Premium Movie Marketplace</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script>
+    // Load featured movies on home page
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const res = await fetch('/api/movies?featured=true');
+        const data = await res.json();
+        const grid = document.getElementById('featured-grid');
+        
+        if (data.movies && data.movies.length > 0) {
+          grid.innerHTML = data.movies.slice(0, 6).map(movie => `
+            <div class="movie-card" onclick="window.location.href='/movies'">
+              <div class="movie-poster">
+                <img src="${movie.posterUrl || 'https://via.placeholder.com/300x450/1a1a2e/667eea?text=No+Poster'}" 
+                     alt="${movie.title}" loading="lazy"
+                     onerror="this.src='https://via.placeholder.com/300x450/1a1a2e/667eea?text=${encodeURIComponent(movie.title)}'">
+                <div class="overlay">
+                  <span class="btn btn-primary btn-sm">View Details</span>
+                </div>
+              </div>
+              <div class="movie-info">
+                <div class="movie-genre">${movie.genre}</div>
+                <div class="movie-title">${movie.title}</div>
+                <div class="movie-meta">
+                  <span class="movie-rating">★ ${movie.rating.toFixed(1)}</span>
+                  <span class="movie-price">₹${movie.price}</span>
+                </div>
+              </div>
+            </div>
+          `).join('');
+        } else {
+          grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:40px">No featured movies yet. Check back soon!</p>';
+        }
+      } catch (e) {
+        document.getElementById('featured-grid').innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:40px">Unable to load movies</p>';
+      }
+    });
+  </script>
+</body>
+</html>

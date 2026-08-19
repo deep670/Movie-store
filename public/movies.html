@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and buy premium movies at MovieStore. Action, Comedy, Drama, Sci-Fi, and more.">
+  <title>Browse Movies — MovieStore</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animated">
+    <div class="bg-blob"></div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1><span class="gradient-text">Movie</span> Collection</h1>
+    <p>Discover premium movies across every genre. Find your next favorite film.</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="section" style="padding-top: 0">
+    <!-- Filters Bar -->
+    <div class="filters-bar" id="filters-bar">
+      <div class="search-box">
+        <lord-icon src="https://cdn.lordicon.com/kkvxgpti.json" trigger="hover"
+          colors="primary:#e0e0e0" style="width:20px;height:20px"></lord-icon>
+        <input type="text" id="search-input" placeholder="Search movies, directors...">
+      </div>
+
+      <div class="filter-chips">
+        <button class="chip active" data-genre="All">All</button>
+        <button class="chip" data-genre="Action">Action</button>
+        <button class="chip" data-genre="Comedy">Comedy</button>
+        <button class="chip" data-genre="Drama">Drama</button>
+        <button class="chip" data-genre="Sci-Fi">Sci-Fi</button>
+        <button class="chip" data-genre="Horror">Horror</button>
+        <button class="chip" data-genre="Thriller">Thriller</button>
+        <button class="chip" data-genre="Romance">Romance</button>
+        <button class="chip" data-genre="Animation">Animation</button>
+        <button class="chip" data-genre="Adventure">Adventure</button>
+      </div>
+
+      <select class="form-input" id="sort-select" style="width:auto;min-width:150px;padding:10px 40px 10px 16px">
+        <option value="default">Sort: Latest</option>
+        <option value="price_asc">Price: Low → High</option>
+        <option value="price_desc">Price: High → Low</option>
+        <option value="rating">Highest Rated</option>
+        <option value="name">Name: A → Z</option>
+        <option value="year">Newest First</option>
+      </select>
+    </div>
+
+    <!-- Movie Count -->
+    <div style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.9rem;">
+      Showing <span id="movie-count">0 movies</span>
+    </div>
+
+    <!-- Movie Grid -->
+    <div class="movie-grid" id="movies-grid">
+      <div class="loader" style="grid-column: 1/-1">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 <a href="/">MovieStore</a>. Premium Movie Marketplace</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/movies.js"></script>
+</body>
+</html>
