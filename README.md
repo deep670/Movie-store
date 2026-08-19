@@ -1,3 +1,5 @@
+<img width="1913" height="999" alt="Image" src="https://github.com/user-attachments/assets/c129ae6d-fcc9-4e6d-8e20-25a5c8e6cb09" />
+
 # 🎬 Movie Store
 
 A full-stack **Movie Store web application** where users can browse movies, add them to their cart, purchase movies, and make payments through **Razorpay**.
